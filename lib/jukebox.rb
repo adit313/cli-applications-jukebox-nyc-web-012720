@@ -18,7 +18,7 @@ def play(songs)
   pp input
   pp input.to_i
   begin
-  legal_integer = ((songs.length+1) >= input.to_i)
+  legal_integer = ((songs.length+1) >= Integer input)
     rescue 
       legal_integer = false
     end
@@ -26,7 +26,7 @@ def play(songs)
     pp legal_integer
   if (songs.include?(input) || legal_integer)
     begin
-    puts "Playing #{songs[input.to_i]}"
+    puts "Playing #{songs[Integer input]}"
       rescue
     puts "Playing #{input}"
   end
