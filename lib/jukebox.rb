@@ -42,9 +42,12 @@ def run
   until input = 'exit'
     input = gets.strip
     case input
+      when 'help'
+        help
       when 'list'
-      when 'list'
-      when 'list'
+        list(songs)
+      when 'play'
+        play(songs)
       
   end
 
