@@ -14,7 +14,7 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  raw_input = gets.strip
+  input = gets.strip
   pp input
   pp input.to_i
   begin
