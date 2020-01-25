@@ -39,7 +39,7 @@ def run(songs)
   puts "Please enter a commonad"
   input = 'starting'
   
-  until input = 'exit'
+  until input == 'exit'
     input = gets.strip
     case input
       when 'help'
