@@ -42,7 +42,9 @@ def run
   until input = 'exit'
     input = gets.strip
     case input
-      when 
+      when 'list'
+      when 'list'
+      when 'list'
       
   end
 
