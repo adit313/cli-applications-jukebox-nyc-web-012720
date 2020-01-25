@@ -34,3 +34,17 @@ end
 def exit_jukebox
   puts "Goodbye"
 end
+
+def run
+  puts "Please enter a commonad"
+  input = 'starting'
+  
+  until input = 'exit'
+    input = gets.strip
+    case input
+      when 
+      
+  end
+
+exit_jukebox
+end
