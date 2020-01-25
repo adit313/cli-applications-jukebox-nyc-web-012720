@@ -49,7 +49,7 @@ def run(songs)
       when 'play'
         play(songs)
       else
-        puts "please enter a valid command"
+        pp "please enter a valid command"
     end
   end
 exit_jukebox
