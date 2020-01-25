@@ -15,14 +15,11 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
-  pp input
   begin
   legal_integer = ((songs.length+1) >= Integer(input))
     rescue 
       legal_integer = false
     end
-    pp songs.include?(input) 
-    pp legal_integer
   if (songs.include?(input) || legal_integer)
     begin
     puts "Playing #{songs[Integer(input)-1]}"
