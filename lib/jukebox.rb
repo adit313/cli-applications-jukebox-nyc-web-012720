@@ -25,7 +25,7 @@ def play(songs)
     pp legal_integer
   if (songs.include?(input) || legal_integer)
     begin
-    return songs[Integer(input)]
+    puts "Playing #{songs[Integer(input)]}"
       rescue
     puts "Playing #{input}"
   end
